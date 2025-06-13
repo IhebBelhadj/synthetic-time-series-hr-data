@@ -94,22 +94,19 @@ To ensure the generated data was believable, I built several validation visualiz
 
 This plot tracks a single employee's salary over time. The step-wise increases clearly align with promotion events (marked with green circles) and annual review cycles (marked with dashed gray lines), confirming the salary logic is working as intended.
 
-![Sample Employee Salary Plot](placeholder_for_salary_plot.png)
-_(Note: You would replace this text with an actual image of your plot)_
+![Sample Employee Salary Plot](./img/salary_record.png)
 
 #### Plot 2: Company-Wide Growth Trends
 
 This plot shows the aggregated headcount and HR expenses over time, broken down by department. The gradual, steady growth confirms that the simulation is stable and doesn't produce wild, unrealistic fluctuations.
 
-![Sample Company Growth Plot](placeholder_for_growth_plot.png)
-_(Note: You would replace this text with an actual image of your plot)_
+![Sample Company Growth Plot](./img/hr_expenses.png)
 
 #### Plot 3: Individual Performance History
 
 This visualization shows an employee's performance scores over time. You can see the scores are typically in the "Normal" range but spike into the "High" range just before a promotion date (marked with a green dashed line), validating the "performance-for-promotion" causality rule.
 
-![Sample Performance Plot](placeholder_for_performance_plot.png)
-_(Note: You would replace this text with an actual image of your plot)_
+![Sample Performance Plot](./img/performance_score.png)
 
 ## 6. How to Run the Project
 
@@ -124,8 +121,8 @@ _(Note: You would replace this text with an actual image of your plot)_
     Clone this repository to your local machine using the following command:
 
     ```bash
-    git clone <your-repository-url>
-    cd <repository-directory>
+    git clone https://github.com/IhebBelhadj/synthetic-time-series-hr-data.git
+    cd synthetic-time-series-hr-data
     ```
 
 2.  **Set Up the Input Data Directory**
@@ -138,8 +135,8 @@ _(Note: You would replace this text with an actual image of your plot)_
 
     ```
     .
-    ├── generate_data.ipynb       # Or your main notebook file
-    ├── env.yml                   # The environment definition file
+    ├── data_gen_project.ipynb
+    ├── env.yml
     ├── input_data/
     │   └── attrition.csv
     └── README.md
@@ -148,15 +145,15 @@ _(Note: You would replace this text with an actual image of your plot)_
 3.  **Create and Activate the Conda Environment**
     The `env.yml` file contains all the necessary Python packages and their specific versions to ensure the code runs correctly.
 
-    - **Create the environment** from the `env.yml` file. This command will set up an environment named `data-env`.
-      ```bash
-      conda env create -f env.yml
-      ```
-    - **Activate the environment**. You must do this every time you work on the project.
-      `bash
+        - **Create the environment** from the `env.yml` file. This command will set up an environment named `data-env`.
+          ```bash
+          conda env create -f env.yml
+          ```
+        - **Activate the environment**. You must do this every time you work on the project.
+          `bash
+
     conda activate data-env
-    `
-      Your command prompt should now show `(data-env)` at the beginning, indicating the environment is active.
+    `      Your command prompt should now show`(data-env)` at the beginning, indicating the environment is active.
 
 4.  **Launch Jupyter and Run the Notebook**
     With the `data-env` environment active, start a Jupyter Notebook session:
