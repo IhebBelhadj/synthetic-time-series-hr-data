@@ -2,3 +2,4 @@
 /snapshots
 /generated_raw_data
 *.csv
+!input_data/*.csv
