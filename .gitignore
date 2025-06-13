@@ -1,0 +1,4 @@
+.ipynb_checkpoints/
+/snapshots
+/generated_raw_data
+*.csv
