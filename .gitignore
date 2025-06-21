@@ -3,3 +3,4 @@
 /generated_raw_data
 *.csv
 !input_data/*.csv
+eda_attrition_data.ipynb
